@@ -14,17 +14,20 @@ class App extends Component {
   }
 
    renderBandEvents = (band) => {
-     console.log(band)
      fetch(TheURL + band + TheKey)
      .then(x => x.json())
-     .then((data) => {
-     console.log(data)
+     .then((band) => {
+     this.setState({
+       band: band
+     })
    })
 
      fetch(TheURL + band + '/events' + TheKey)
      .then(x => x.json())
      .then((events) => {
-       console.log(events)
+       this.setState({
+         events: events
+       })
      })
    }
 
@@ -40,17 +43,20 @@ class App extends Component {
    }
 
   render() {
+    console.log(this.state.band.image_url)
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+        <header>
+          <h1 className="App-title"></h1>
         </header>
         <p className="App-intro">
           Welcome....to Bands.....I mean...Music in Town!
         </p>
         <Filter getBand={this.getBand} handleKeyPress={this.handleKeyPress}/>
-        <EventContainer />
+        <div>
+        <img src={this.state.band.image_url}></img>
+      </div>
+        <EventContainer band={this.state.band} events={this.state.events}/>
         <UserContainer />
       </div>
     );
