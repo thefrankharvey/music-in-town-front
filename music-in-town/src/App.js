@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import EventContainer from './EventContainer'
+import UserContainer from './UserContainer'
+import Filter from './Filter'
 
 class App extends Component {
   render() {
@@ -13,6 +16,9 @@ class App extends Component {
         <p className="App-intro">
           Welcome....to Bands.....I mean...Music in Town!
         </p>
+        <EventContainer />
+        <UserContainer />
+        <Filter />
       </div>
     );
   }
