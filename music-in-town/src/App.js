@@ -10,7 +10,7 @@ const TheURL = process.env.REACT_APP_URL
 class App extends Component {
   state = {
     band: [],
-    events: []
+    events: [],
   }
 
    renderBandEvents = (band) => {
@@ -28,6 +28,12 @@ class App extends Component {
        this.setState({
          events: events
        })
+     })
+   }
+
+   changeEvents = (events) => {
+     this.setState({
+       events: events
      })
    }
 
@@ -56,7 +62,7 @@ class App extends Component {
         <div>
         <img src={this.state.band.image_url}></img>
       </div>
-        <EventContainer band={this.state.band} events={this.state.events}/>
+        <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents}/>
         <UserContainer />
       </div>
     );
