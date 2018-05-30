@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import EventCard from './EventCard'
-
 class EventContainer extends Component {
 
   handleSearch = (event) => {
-    console.log(event.target.value)
     let events = this.props.events.filter(
       (show) => {
         return show.venue.city === event.target.value
@@ -20,11 +18,8 @@ class EventContainer extends Component {
     let optionItems = events.map((event) =>
              <option key={event.venue.city}>{event.venue.city}</option>
          );
-    console.log(this.props.band);
 
-    let theStuff = () => {
 
-    }
   return (
 
     <div>
@@ -44,7 +39,7 @@ class EventContainer extends Component {
             </select>
           </label>
         </form>
-      {this.props.events.map(event => <EventCard  event={event} />)}
+      {this.props.events.map(event => <EventCard  event={event} addToMyEvents={this.props.addToMyEvents}/>)}
     </div> : <div> </div> }
     </div>
   );

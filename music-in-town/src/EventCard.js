@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import MyEventContainer from './MyEventContainer'
+
 
 class EventCard extends Component {
+
   render() {
+console.log(this.props)
     let {datetime, lineup} = this.props.event
     return (
       <div>
@@ -13,7 +17,7 @@ class EventCard extends Component {
           <p> Who: {lineup}</p>
         </div>
         <div>
-          <button>Add to My Shows</button>
+          <button id={this.props.event.id} onClick={(e) => this.props.addToMyEvents(e)}>Add to My Shows</button>
         </div>
         <hr></hr>
     </div>

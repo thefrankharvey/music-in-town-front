@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import EventContainer from './EventContainer'
-import UserContainer from './UserContainer'
+import MyEventContainer from './MyEventContainer'
 import Filter from './Filter'
 const TheKey = process.env.REACT_APP_BANDS_IN_TOWN_API_KEY
 const TheURL = process.env.REACT_APP_URL
@@ -11,6 +11,7 @@ class App extends Component {
   state = {
     band: [],
     events: [],
+    myEvents: []
   }
 
    renderBandEvents = (band) => {
@@ -48,8 +49,16 @@ class App extends Component {
      this.renderBandEvents(this.state.band)
    }
 
+   addToMyEvents = (e) => {
+      console.log(e.target)
+      let addEvent = this.state.events.find(event => event.id === e.target.id)
+      console.log(addEvent)
+      this.setState({
+       myEvents: [...this.state.myEvents, addEvent]
+      })
+    }
+
   render() {
-    console.log(this.state.band.image_url)
     return (
       <div className="App">
         <header>
@@ -62,8 +71,8 @@ class App extends Component {
         <div>
         <img src={this.state.band.image_url}></img>
       </div>
-        <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents}/>
-        <UserContainer />
+        <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents } addToMyEvents={this.addToMyEvents}/>
+        <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents} />
       </div>
     );
   }
