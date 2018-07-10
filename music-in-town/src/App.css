@@ -1,6 +1,26 @@
 .App {
   text-align: center;
+  background: url('http://www.tompetty.com/sites/g/files/g2000004366/f/201412/TP-BG14-1920x1200.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.App{
+z-index: 9999;
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+overflow: auto;
+}
+
+.Band-photo {
+    max-width: 100%;
+    max-height: 100;
+  }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -19,5 +39,18 @@
 }
 
 .App-intro {
-  font-size: large;
+  font-size: 90px;
+  font-family: 'Monoton', cursive;
+  margin: auto;
+  font-size: 12vw;
+  color: white;
+  text-shadow: 0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 1em red,
+               0 0 2em red,
+               0 0 6em red;
 }

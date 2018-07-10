@@ -6,14 +6,25 @@ class Filter extends Component {
   render() {
     return (
       <div>
+
         <form onSubmit={this.props.handleKeyPress}>
-          <label>
-            Band:
-            <input type='text' onChange={this.props.getBand}/>
+
+          <label className='label'>
+            Search for a Band:
           </label>
-          <input type='submit' value='Submit'/>
+
+          <div className='input'>
+            <input type='text' onChange={this.props.getBand} placeholder='Band Name'/>
+          </div>
+
+          <div className='submit'>
+            <input type='submit' value='Submit'/>
+          </div>
+          
         </form>
+
         <br></br>
+
       </div>
     );
   }

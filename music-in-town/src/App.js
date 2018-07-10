@@ -15,6 +15,7 @@ class App extends Component {
   }
 
    renderBandEvents = (band) => {
+     console.log(TheKey)
      fetch(TheURL + band + TheKey)
      .then(x => x.json())
      .then((band) => {
@@ -36,7 +37,7 @@ class App extends Component {
          clicked: !this.state.clicked
        })
      }
-     
+
    changeEvents = (events) => {
      this.setState({
        events: events
@@ -70,11 +71,11 @@ class App extends Component {
             <h1 className="App-title"></h1>
           </header>
           <p className="App-intro">
-            Welcome....to Bands.....I mean...Music in Town!
+            Concert World!
           </p>
           <Filter getBand={this.getBand} handleKeyPress={this.handleKeyPress}/>
-          <div>
-          <img src={this.state.band.image_url}></img>
+          <div className="Band-photo">
+          <img src={this.state.band.image_url} height='400'></img>
         </div>
           <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents } addToMyEvents={this.addToMyEvents}/>
           <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents} />
