@@ -12,6 +12,8 @@ class EventContainer extends Component {
     this.props.changeEvents(events)
   }
 
+
+
   render() {
 
     let events = this.props.events;
@@ -26,10 +28,7 @@ class EventContainer extends Component {
       {this.props.events.length ?
       <div>
         <h2>Upcoming Shows</h2>
-
-      <div>
-        <button>Go To My Shows</button>
-      </div>
+  
       <br></br>
         <form >
           <label>

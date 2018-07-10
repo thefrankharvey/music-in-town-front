@@ -11,7 +11,7 @@ class App extends Component {
   state = {
     band: [],
     events: [],
-    myEvents: []
+    myEvents: [],
   }
 
    renderBandEvents = (band) => {
@@ -31,7 +31,12 @@ class App extends Component {
        })
      })
    }
-
+     showMyEvents = () => {
+       this.setState({
+         clicked: !this.state.clicked
+       })
+     }
+     
    changeEvents = (events) => {
      this.setState({
        events: events
@@ -59,22 +64,23 @@ class App extends Component {
     }
 
   render() {
-    return (
-      <div className="App">
-        <header>
-          <h1 className="App-title"></h1>
-        </header>
-        <p className="App-intro">
-          Welcome....to Bands.....I mean...Music in Town!
-        </p>
-        <Filter getBand={this.getBand} handleKeyPress={this.handleKeyPress}/>
-        <div>
-        <img src={this.state.band.image_url}></img>
-      </div>
-        <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents } addToMyEvents={this.addToMyEvents}/>
-        <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents} />
-      </div>
-    );
+      return (
+        <div className="App">
+          <header>
+            <h1 className="App-title"></h1>
+          </header>
+          <p className="App-intro">
+            Welcome....to Bands.....I mean...Music in Town!
+          </p>
+          <Filter getBand={this.getBand} handleKeyPress={this.handleKeyPress}/>
+          <div>
+          <img src={this.state.band.image_url}></img>
+        </div>
+          <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents } addToMyEvents={this.addToMyEvents}/>
+          <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents} />
+        </div>
+      );
+
   }
 }
 

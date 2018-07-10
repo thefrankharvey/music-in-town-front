@@ -11,22 +11,11 @@ class Signup extends Component {
   return (
       <div>
         <div>
-        <label>
-          <h3>NameFuck: </h3>
-        </label>
-          <input type='text'></input>
-            <label>
-              <h3>EmailFuck: </h3>
-            </label>
-            <input type='text'></input>
-            <NavLink to={'/app'}>
-              <button>Submit</button>
-            </NavLink>
-
+    
             <Switch>
               <Route path='/app' component={ App }></Route>
             </Switch>
-            
+
         </div>
       </div>
     )
