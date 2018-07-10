@@ -9,21 +9,15 @@ class Filter extends Component {
 
         <form onSubmit={this.props.handleKeyPress}>
 
-          <label className='label'>
-            Search for a Band:
-          </label>
-
-          <div className='input'>
-            <input type='text' onChange={this.props.getBand} placeholder='Band Name'/>
+          <div className="boxbox">
+            <input className="search" type="text" onChange={this.props.getBand} placeholder='Search a Band'/>
+            <input className="submit" type="submit" value="GO"/>
           </div>
 
-          <div className='submit'>
-            <input type='submit' value='Submit'/>
-          </div>
-          
-        </form>
+          </form>
 
-        <br></br>
+          <br></br>
+
 
       </div>
     );

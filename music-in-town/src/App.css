@@ -1,3 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,800');
+
+form {
+  width:60%;
+  margin:0 auto;
+  padding-top:4em;
+}
+
+.boxbox {
+  height:60px;
+  border-style:solid;
+  border-width:6px;
+  border-color:white;
+  border-radius: 15px;
+  box-shadow: 0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 1em red,
+               0 0 2em red,
+               0 0 6em red;
+}
+
+.search, .submit {
+  font-size: 24px;
+  padding: 0 15px;
+  height: 100%;
+  border:none;
+
+}
+
+.search {
+  highlight-color: white;
+  background-color: transparent;
+}
+
+textarea, input {
+   font-family:"open sans", sans-serif;
+   color: white;
+}
+
+textarea:focus, input:focus {
+   color:white;
+   outline:none;
+}
+
+.submit {
+  font-weight:600;
+  background:transparent;
+  color:white;
+  height:99%;
+  width:18%;
+  float:right;
+  transition: all 100ms ease-in-out;
+  border-radius: 12px;
+}
+
+.submit:hover {
+  text-shadow: 0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 1em red,
+               0 0 2em red,
+               0 0 6em red;
+}
+
 .App {
   text-align: center;
   background: url('http://www.tompetty.com/sites/g/files/g2000004366/f/201412/TP-BG14-1920x1200.jpg') no-repeat center center fixed;
