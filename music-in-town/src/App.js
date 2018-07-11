@@ -77,6 +77,7 @@ class App extends Component {
           <div className="Band-photo">
           <img src={this.state.band.image_url} height='400'></img>
         </div>
+        
           <EventContainer band={this.state.band} events={this.state.events} changeEvents={this.changeEvents } addToMyEvents={this.addToMyEvents}/>
           <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents} />
         </div>

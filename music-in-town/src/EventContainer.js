@@ -24,20 +24,29 @@ class EventContainer extends Component {
 
   return (
 
-    <div>
+
+
+    <div className="container">
       {this.props.events.length ?
-      <div>
-        <h2>Upcoming Shows</h2>
-  
-      <br></br>
-        <form >
-          <label>
-            Sort by city:
-            <select onChange={this.handleSearch}>
-              {optionItems}
-            </select>
-          </label>
-        </form>
+
+        <div >
+  <div id="upcomingShowsContainer" className="row">
+    <div className="col-sm">
+      <p style={{color:"red"}}>Upcoming Shows</p>
+    </div>
+    <div className="col-sm">
+      <form >
+        <p>Sort By City:</p>
+          <select onChange={this.handleSearch}>
+            {optionItems}
+          </select>
+      </form>
+
+    </div>
+  </div>
+
+
+
       {this.props.events.map(event => <EventCard  event={event} addToMyEvents={this.props.addToMyEvents}/>)}
     </div> : <div> </div> }
     </div>

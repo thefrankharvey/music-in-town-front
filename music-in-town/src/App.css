@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,800');
 
-form {
+/* form {
   width:60%;
   margin:0 auto;
   padding-top:4em;
-}
+} */
 
 .boxbox {
   height:60px;
@@ -12,7 +12,7 @@ form {
   border-width:6px;
   border-color:white;
   border-radius: 15px;
-  box-shadow: 0 0 .1em white,
+  box-shadow:  0 0 .1em white,
                0 0 .1em blueviolet,
                0 0 .1em red,
                0 0 .1em red,
@@ -29,6 +29,9 @@ form {
   height: 100%;
   border:none;
 
+}
+.events, p {
+  color: white;
 }
 
 .search {
