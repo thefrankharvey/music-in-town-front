@@ -13,7 +13,7 @@ class EventCard extends Component {
     ];
 
     return (
-
+      
       <div className="row" style={{color:"white"}}>
         <div id="dateSpan" className="col-sm">
           <div style={{height:'12px'}}></div>

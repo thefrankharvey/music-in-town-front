@@ -5,6 +5,68 @@
   margin:0 auto;
   padding-top:4em;
 } */
+.my-events {
+  color: white;
+  position:fixed;
+  background-color: transparent;
+  top:220px;
+  border-style:solid;
+  border-width:3px;
+  border-color:white;
+  border-radius: 15px;
+  box-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 .5em red,
+               0 0 1em red,
+               0 0 3em red;
+
+  width: 430px;
+  height: 100px;
+  padding-left: -20px;
+  -webkit-box-sizing: border-box;
+  font: 20px/2 din;
+  left: -185px;
+  -webkit-transform: rotate(-90deg);
+  text-align: center;
+  writing-mode: vertical-lr;
+  margin-top: 40px;
+
+}
+
+#my-events-title{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 .5em red,
+               0 0 1em red,
+               0 0 3em red;
+}
+
+
+.events-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 .5em red,
+               0 0 1em red,
+               0 0 3em red;
+}
+
 #venue {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
@@ -20,6 +82,8 @@
 #dateSpan {
   text-align: center;
 }
+
+
 
 .boxbox {
   margin-right:auto;

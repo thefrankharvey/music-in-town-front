@@ -64,13 +64,27 @@ class App extends Component {
         <header>
           <h1 className="App-title"></h1>
         </header>
+        <a href='http://localhost:3001/app'>
         <p className="App-intro">
           Concert World!
         </p>
+        </a>
         <Filter getBand={this.getBand} handleKeyPress={this.handleKeyPress}/>
-        <div>
-          <button onClick={this.myEvents}>click me now!!!!</button>
-        </div>
+          <div className='my-events' onClick={this.myEvents}>
+            <br></br>
+            <div className="events-text">
+              <span> S </span>
+              <span> T </span>
+              <span> N </span>
+              <span> E </span>
+              <span> V </span>
+              <span> E </span>
+              <br></br>
+              <span> Y </span>
+              <span> M </span>
+            
+            </div>
+           </div>
         <div className="Band-photo">
           <img src={this.state.band.image_url} height='400'></img>
         </div>
