@@ -4,16 +4,21 @@ import EventCard from './EventCard'
 class EventContainer extends Component {
 
   handleSearch = (event) => {
-    let events = this.props.events.filter((show) => {
-      return show.venue.city === event.target.value
-    })
-    this.props.changeEvents(events)
+    if(event.target.value === 'See all') {
+      this.props.changeEvents(this.props.allEvents)
+    } else {
+      let events = this.props.events.filter((show) => {
+        return show.venue.city === event.target.value.slice(0, event.target.value.length - 6)
+      })
+      this.props.changeEvents(events)
+    }
   }
 
   render() {
+
     let events = this.props.events;
-    let optionItems = events.map((event) => <option key={event.venue.city}>{event.venue.city}</option>)
-    
+    let optionItems = events.map((event) => <option key={event.venue.city}>{event.venue.city}  {event.datetime.slice(5, 10)}</option>)
+
     return (
       <div className="container">
         {this.props.events.length ? <div>

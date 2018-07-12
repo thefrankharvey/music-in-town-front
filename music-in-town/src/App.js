@@ -23,7 +23,10 @@ class App extends Component {
     })
 
     fetch(TheURL + band + '/events' + TheKey).then(x => x.json()).then((events) => {
-      this.setState({events: events})
+      this.setState({
+        events: events,
+        allEvents: events
+      })
     })
   }
 
@@ -55,7 +58,6 @@ class App extends Component {
   }
 
   render() {
-
     if (!this.state.myEventsClicked) {
       return (
       <div className="App">
@@ -75,6 +77,7 @@ class App extends Component {
         <EventContainer
           band={this.state.band}
           events={this.state.events}
+          allEvents={this.state.allEvents}
           changeEvents={this.changeEvents}
           addToMyEvents={this.addToMyEvents}
           myEventsClicked={this.state.myEventsClicked}
