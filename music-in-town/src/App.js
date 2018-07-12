@@ -53,11 +53,19 @@ class App extends Component {
     })
   }
 
+  removeFromMyEvents = (e) => {
+    let removeEvent = this.state.myEvents.filter(event => event.id !== e.target.id)
+    this.setState({
+      myEvents: removeEvent
+    })
+  }
+
   myEvents = (e) => {
     this.setState({myEventsClicked: true})
   }
 
   render() {
+
     if (!this.state.myEventsClicked) {
       return (
       <div className="App">
@@ -74,15 +82,14 @@ class App extends Component {
             <br></br>
             <div className="events-text">
               <span> S </span>
-              <span> T </span>
-              <span> N </span>
-              <span> E </span>
-              <span> V </span>
-              <span> E </span>
-              <br></br>
+              <span> W </span>
+              <span> O </span>
+              <span> H </span>
+              <span> S </span>
+              <br/>
               <span> Y </span>
               <span> M </span>
-            
+
             </div>
            </div>
         <div className="Band-photo">
@@ -111,7 +118,7 @@ class App extends Component {
         <div style={{
             marginLeft: '-25% !important'
           }}>
-          <MyEventContainer className="myEventContainer" myEvents={this.state.myEvents}/>
+          <MyEventContainer removeFromMyEvents={this.removeFromMyEvents} myEventsClicked={this.state.myEventsClicked} className="myEventContainer" myEvents={this.state.myEvents}/>
         </div>
       </div>)
     }

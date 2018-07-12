@@ -9,8 +9,8 @@ render(){
   return(
 
   <div style={{display:'block', margin:'auto', width:'75%'}}>
-  <h1 id="my-events-title">My Events</h1>
-  {this.props.myEvents.map(event => <EventCard event={event} />)}
+  <h1 id="my-events-title">My Shows</h1>
+  {this.props.myEvents.map(event => <EventCard removeFromMyEvents={this.props.removeFromMyEvents} myEventsClicked= {this.props.myEventsClicked} event={event} />)}
   </div>
 )
 }

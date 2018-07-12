@@ -5,6 +5,30 @@
   margin:0 auto;
   padding-top:4em;
 } */
+.removeButton {
+  font-family: 'Montserrat', sans-serif;
+
+  height:30px;
+  width: 120px;
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+  border-radius:12px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  box-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 .8em red,
+               0 0 .8em red,
+               0 0 2em red;
+}
+
 .my-events {
   color: white;
   position:fixed;
@@ -24,12 +48,11 @@
                0 0 1em red,
                0 0 3em red;
 
-  width: 430px;
+  width: 460px;
   height: 100px;
-  padding-left: -20px;
   -webkit-box-sizing: border-box;
-  font: 20px/2 din;
-  left: -185px;
+  font: 24px/2 din;
+  left: -195px;
   -webkit-transform: rotate(-90deg);
   text-align: center;
   writing-mode: vertical-lr;
@@ -54,6 +77,8 @@
 
 
 .events-text{
+
+  padding-right: -200px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-shadow:  0 0 .1em white,
@@ -69,20 +94,27 @@
 
 #venue {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
+  padding-top: 20px;
 }
 
 #city {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #dateSpan {
   text-align: center;
 }
 
+#band-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  padding-top: 50px;
+}
 
 
 .boxbox {
@@ -145,7 +177,9 @@ span {
 }
 
 .addButton {
-  height:30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  height: 30px;
   width: 120px;
   border-style:solid;
   border-width:2px;
@@ -154,7 +188,7 @@ span {
   outline: none;
   background-color: transparent;
   color: white;
-  font-size: 12px;
+
   box-shadow:  0 0 .1em white,
                0 0 .1em blueviolet,
                0 0 .1em red,
@@ -245,7 +279,7 @@ overflow: auto;
   font-size: 90px;
   font-family: 'Monoton', cursive;
   margin: auto;
-  font-size: 12vw;
+  font-size: 11vw;
   color: white;
   text-shadow: 0 0 .1em white,
                0 0 .1em blueviolet,
