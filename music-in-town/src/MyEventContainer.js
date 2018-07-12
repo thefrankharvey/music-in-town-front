@@ -8,8 +8,8 @@ render(){
 
   return(
 
-  <div style={{position:'fixed',right:'0',top:'0', background:'transparent', fontSize:'11pt'}}>
-  <h1>My Shows</h1>
+  <div style={{display:'block', margin:'auto', width:'75%'}}>
+  // <button>My Shows</button>
   {this.props.myEvents.map(event => <EventCard event={event} />)}
   </div>
 )

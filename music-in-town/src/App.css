@@ -5,9 +5,27 @@
   margin:0 auto;
   padding-top:4em;
 } */
+#venue {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+#city {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 20px;
+}
+
+#dateSpan {
+  text-align: center;
+}
 
 .boxbox {
+  margin-right:auto;
+  margin-left:auto;
   height:60px;
+  width: 600px;
   border-style:solid;
   border-width:6px;
   border-color:white;
@@ -23,12 +41,74 @@
                0 0 6em red;
 }
 
+.selectDrop {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  height:35px;
+  width: 240px;
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+  border-radius: 15px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  box-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 1em red,
+               0 0 2em red,
+               0 0 6em red;
+
+}
+
+span {
+  display: block;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+#month{
+  font-size: 28px;
+}
+
+#day{
+  font-size: 52px;margin-top:-15px
+}
+
+.addButton {
+  height:30px;
+  width: 120px;
+  border-style:solid;
+  border-width:2px;
+  border-color:white;
+  border-radius:12px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+  box-shadow:  0 0 .1em white,
+               0 0 .1em blueviolet,
+               0 0 .1em red,
+               0 0 .1em red,
+               0 0 .2em red,
+               0 0 .2em red,
+               0 0 .8em red,
+               0 0 .8em red,
+               0 0 2em red;
+
+}
+
 .search, .submit {
   font-size: 24px;
   padding: 0 15px;
   height: 100%;
   border:none;
-
+  width:90%
 }
 .events, p {
   color: white;
@@ -96,21 +176,6 @@ overflow: auto;
     max-height: 100;
   }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
 
 .App-intro {
   font-size: 90px;
@@ -128,3 +193,11 @@ overflow: auto;
                0 0 2em red,
                0 0 6em red;
 }
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+button:focus {
+  outline:0;}

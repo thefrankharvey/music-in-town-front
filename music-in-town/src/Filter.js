@@ -9,9 +9,9 @@ class Filter extends Component {
 
         <form onSubmit={this.props.handleKeyPress}>
 
-          <div className="boxbox">
-            <input className="search" type="text" onChange={this.props.getBand} placeholder='Search a Band'/>
-            <input className="submit" type="submit" value="GO"/>
+          <div className="boxbox row" >
+            <input className="search col-sm-9" type="text" onChange={this.props.getBand} placeholder='Search a Band'/>
+            <input className="submit col-sm-2" type="submit" value="GO" style={{marginLeft:'49px'}}/>
           </div>
 
           </form>
@@ -23,5 +23,7 @@ class Filter extends Component {
     );
   }
 }
+
+
 
 export default Filter;
