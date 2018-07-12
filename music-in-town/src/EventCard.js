@@ -5,7 +5,6 @@ import MyEventContainer from './MyEventContainer'
 
 class EventCard extends Component {
   render() {
-    console.log(this.props.myEvents)
     let {datetime, lineup} = this.props.event
     let dateSlice = datetime.slice(5,10)
     let monthNames = ["whatever", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
