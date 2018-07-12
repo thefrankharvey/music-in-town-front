@@ -44,6 +44,7 @@ class App extends Component {
   }
 
   addToMyEvents = (e) => {
+    e.target.style.display = 'none';
     let addEvent = this.state.events.find(event => event.id === e.target.id)
     this.setState({
       myEvents: [
