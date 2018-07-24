@@ -77,7 +77,6 @@
 
 
 .events-text{
-
   padding-right: -200px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -94,7 +93,7 @@
 
 #venue {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   text-align: left;
   padding-top: 20px;
 }
@@ -102,7 +101,7 @@
 #city {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 #dateSpan {
@@ -173,7 +172,7 @@ span {
 }
 
 #day{
-  font-size: 52px;margin-top:-15px
+  font-size: 72px;margin-top:-15px
 }
 
 .addButton {

@@ -73,7 +73,7 @@ class App extends Component {
         <header>
           <h1 className="App-title"></h1>
         </header>
-        <a href='http://localhost:3001/app'>
+        <a href='http://localhost:3000/app'>
         <p className="App-intro">
           Concert World!
         </p>
@@ -111,7 +111,7 @@ class App extends Component {
         <header>
           <h1 className="App-title"></h1>
         </header>
-        <a href='http://localhost:3001/app'>
+        <a href='http://localhost:3000/app'>
           <p className="App-intro">
             Concert World!
           </p>
