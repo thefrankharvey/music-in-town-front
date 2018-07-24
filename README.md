@@ -1,7 +1,7 @@
 <h2 align="center">Concert World</h2>
 
 ![React](https://img.shields.io/badge/react.js-16.3.2-brightgreen.svg)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)(https://opensource.org/licenses/MIT)
 
 ## Overview
 Find all the shows in the world from your favorite bands.
